@@ -1,11 +1,6 @@
 // console.log("Hello");
 
 // utility function to get dom element from string
-// function getElementFromString(string){
-//     let div =document.createElement('div');
-//     div.innerHTML=string;
-//     return string.firstElementChild;
-// }
 let getElementFromString = (string) => {
     let div = document.createElement('div');
     div.innerHTML = string;
@@ -94,7 +89,7 @@ submit.addEventListener('click', () => {
     let url = document.getElementById('url').value;
     let requestType = document.querySelector("input[name='requestType']:checked").value;
     let contentType = document.querySelector("input[name='contentType']:checked").value;
-    // console.log(contentType);
+    //console.log(requestType);
     // contenttype
     if (contentType == 'parameter') {
         data = {};
@@ -121,11 +116,10 @@ submit.addEventListener('click', () => {
             .then((text) => {
                 // document.getElementById('responseJson').value = text
                 document.getElementById('responsePrism').innerHTML = text;
-
                 Prism.highlightAll();
             })
     }
-    else {
+    else if (requestType == 'POST') {
         fetch(url, {
             method: 'POST',
             body: data,
@@ -137,7 +131,50 @@ submit.addEventListener('click', () => {
             .then((text) => {
                 // document.getElementById('responseJson').value = text;
                 document.getElementById('responsePrism').innerHTML = text;
-
+                Prism.highlightAll();
+            });
+    }
+    else if (requestType == 'PATCH') {
+        fetch(url, {
+            method: 'PATCH',
+            body: data,
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+            .then((response) => response.text())
+            .then((text) => {
+                // document.getElementById('responseJson').value = text;
+                document.getElementById('responsePrism').innerHTML = text;
+                Prism.highlightAll();
+            });
+    }
+    else if (requestType == 'PUT') {
+        fetch(url, {
+            method: 'PUT',
+            body: data,
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+            .then((response) => response.text())
+            .then((text) => {
+                // document.getElementById('responseJson').value = text;
+                document.getElementById('responsePrism').innerHTML = text;
+                Prism.highlightAll();
+            });
+    }
+    else {
+        fetch(url, {
+            method: 'DELETE',
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+            .then(() => {
+                // console.log(text);
+                // document.getElementById('responseJson').value = text;
+                document.getElementById('responsePrism').innerHTML ="Deleted";
                 Prism.highlightAll();
             });
     }
