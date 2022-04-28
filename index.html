@@ -22,9 +22,11 @@
   </head>
   <body>
     <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav nav-tabs py-2">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light nav nav-tabs py-2"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand display-1 fs-4" href="/PostEaser/index.html">
+        <a class="navbar-brand display-1 fs-4" href="/index.html">
           <!-- <img src="static/sign-post.png" alt="" width="20" height="17" /> -->
           PostEaser</a
         >
@@ -39,12 +41,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-          <ul class="me-5"></ul>
-          <ul class="me-5"></ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 7%;">
           <div
-            class="navbar-collapse justify-content-md-center collapse show ms-5"
+            class="navbar-collapse justify-content-md-center collapse show "
             id="navbarsExample08"
           >
             <ul class="navbar-nav">
@@ -52,7 +51,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="/PostEaser/index.html"
+                  href="/index.html"
                   >Home</a
                 >
               </li>
@@ -64,180 +63,24 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-3 text-end me-2">
-            <button type="button" class="btn btn-outline-dark me-2" data-bs-toggle="modal"
-            data-bs-target="#loginModal">
-              Login
-            </button>
-            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
-            data-bs-target="#signupModal">Sign-up</button>
-          </div>
         </div>
       </div>
     </nav>
-    
-     <!-- login Modal -->
-     <div
-     class="modal fade"
-     id="loginModal"
-     tabindex="-1"
-     aria-labelledby="loginModalLabel"
-     aria-hidden="true"
-   >
-     <div class="modal-dialog">
-       <div class="modal-content">
-         <div class="modal-header">
-           <h5 class="modal-title" id="loginModalLabel">Login to PostEaser</h5>
-           <button
-             type="button"
-             class="btn-close"
-             data-bs-dismiss="modal"
-             aria-label="Close"
-           ></button>
-         </div>
-         <div class="modal-body">
-           <form>
-             <div class="mb-3">
-               <label for="exampleInputEmail1" class="form-label"
-                 >Email address</label
-               >
-               <input
-                 type="email"
-                 class="form-control"
-                 id="exampleInputEmail1"
-                 aria-describedby="emailHelp"
-               />
-               <div id="emailHelp" class="form-text">
-                 We'll never share your email with anyone else.
-               </div>
-             </div>
-             <div class="mb-3">
-               <label for="exampleInputPassword1" class="form-label"
-                 >Password</label
-               >
-               <input
-                 type="password"
-                 class="form-control"
-                 id="exampleInputPassword1"
-               />
-             </div>
-             <div class="mb-3 form-check">
-               <input
-                 type="checkbox"
-                 class="form-check-input"
-                 id="exampleCheck1"
-               />
-               <label class="form-check-label" for="exampleCheck1"
-                 >Remember Me</label
-               >
-             </div>
-             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-               <button class="btn btn-primary" type="submit">Submit</button>
-             </div>
-           </form>
-         </div>
-       </div>
-     </div>
-   </div>
 
-   <!-- Signup modal -->
-   <div
-     class="modal fade"
-     id="signupModal"
-     tabindex="-1"
-     aria-labelledby="signupModalLabel"
-     aria-hidden="true"
-   >
-     <div class="modal-dialog">
-       <div class="modal-content">
-         <div class="modal-header">
-           <h5 class="modal-title" id="signupModalLabel">
-             Get an PostEaser account
-           </h5>
-           <button
-             type="button"
-             class="btn-close"
-             data-bs-dismiss="modal"
-             aria-label="Close"
-           ></button>
-         </div>
-         <div class="modal-body">
-           <form>
-             <div class="input-group mb-2">
-               <input
-                 type="text"
-                 placeholder="First Name"
-                 aria-label="First name"
-                 class="form-control"
-               />
-               <input
-                 type="text"
-                 placeholder="Last Name"
-                 aria-label="Last name"
-                 class="form-control"
-               />
-             </div>
-             <div class="mb-3">
-               <label for="exampleInputEmail1" class="form-label"
-                 >Email address</label
-               >
-               <input
-                 type="email"
-                 class="form-control"
-                 id="exampleInputEmail1"
-                 aria-describedby="emailHelp"
-               />
-               <div id="emailHelp" class="form-text">
-                 We'll never share your email with anyone else.
-               </div>
-             </div>
-             <div class="mb-3">
-               <label for="exampleInputPassword1" class="form-label"
-                 >Password</label
-               >
-               <input
-                 type="password"
-                 class="form-control"
-                 id="exampleInputPassword1"
-               />
-             </div>
-             <div class="mb-3">
-               <label for="exampleInputPassword1" class="form-label"
-                 >Confirm Password</label
-               >
-               <input
-                 type="password"
-                 class="form-control"
-                 id="exampleInputPassword1"
-               />
-             </div>
-             <div class="mb-3 form-check">
-               <input
-                 type="checkbox"
-                 class="form-check-input"
-                 id="exampleCheck1"
-               />
-               <label class="form-check-label" for="exampleCheck1"
-                 >Remember Me</label
-               >
-             </div>
-             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-               <button class="btn btn-primary" type="submit">Submit</button>
-             </div>
-           </form>
-         </div>
-       </div>
-     </div>
-   </div>
+    <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+      <strong>Hello Users!</strong> If you face any issues or have suggestion please send it <a style="color: #664D44;" href="html/contact.html">here</a> .
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 
     <!-- MAIN SECTION -->
     <div class="container">
       <!-- <h1 class="mt-5 text-center">Welcome to PostEaser!!!</h1> -->
-      <div class=" my-5 text-center display-4">Welcome to PostEaser-Online API Testing Tool <hr class="mb-5"></div>
-      
+      <div class="my-5 text-center display-4">
+        Welcome to PostEaser-Online API Testing Tool
+        <hr class="mb-5" />
+      </div>
     </div>
     <div class="container mb-5">
-
       <!-- url -->
       <div class="mb-3 row">
         <label for="url" class="col-sm-2 col-form-label">URL</label>
@@ -259,67 +102,67 @@
         <div class="col-sm-10">
           <div class="row row-cols-6">
             <!-- GET  -->
-           <div class="form-check me-2">
-             <input
-               class="form-check-input"
-               type="radio"
-               name="requestType"
-               value="GET"
-               id="get"
-               checked
-             />
-             <label class="form-check-label" for="get"> GET </label>
-           </div>
+            <div class="form-check me-2 ms-2 ms-sm-0">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="requestType"
+                value="GET"
+                id="get"
+                checked
+              />
+              <label class="form-check-label" for="get"> GET </label>
+            </div>
             <!-- POST  -->
-           <div class="form-check me-3">
-             <input
-               class="form-check-input"
-               type="radio"
-               name="requestType"
-               id="post"
-               value="POST"
-             />
-             <label class="form-check-label" for="post"> POST </label>
-           </div>
+            <div class="form-check me-3">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="requestType"
+                id="post"
+                value="POST"
+              />
+              <label class="form-check-label" for="post"> POST </label>
+            </div>
             <!-- PUT  -->
-           <div class="form-check me-2">
-             <input
-               class="form-check-input"
-               type="radio"
-               name="requestType"
-               id="put"
-               value="PUT"
-             />
-             <label class="form-check-label" for="put"> PUT </label>
-           </div>
+            <div class="form-check me-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="requestType"
+                id="put"
+                value="PUT"
+              />
+              <label class="form-check-label" for="put"> PUT </label>
+            </div>
             <!-- PATCH  -->
-           <div class="form-check me-3">
-             <input
-               class="form-check-input"
-               type="radio"
-               name="requestType"
-               id="patch"
-               value="PATCH"
-             />
-             <label class="form-check-label" for="patch"> PATCH </label>
-           </div>
+            <div class="form-check me-3">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="requestType"
+                id="patch"
+                value="PATCH"
+              />
+              <label class="form-check-label" for="patch"> PATCH </label>
+            </div>
             <!-- DELETE  -->
-           <div class="form-check me-2">
-             <input
-               class="form-check-input"
-               type="radio"
-               name="requestType"
-               id="delete"
-               value="DELETE"
-             />
-             <label class="form-check-label" for="delete"> DELETE </label>
-           </div> 
+            <div class="form-check me-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="requestType"
+                id="delete"
+                value="DELETE"
+              />
+              <label class="form-check-label" for="delete"> DELETE </label>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- token -->
-      <div class="mb-3 row"  id="tokenBox">
+      <div class="mb-3 row" id="tokenBox">
         <label for="token" class="col-sm-2 col-form-label">Bearer Token</label>
         <div class="col-sm-10 text-center">
           <input
@@ -334,13 +177,13 @@
       <!-- headertype -->
       <div class="mb-3 row">
         <label for="headerType" class="col-sm-2 col-form-label"
-          >Header Type </label
-        >
+          >Header Type
+        </label>
         <div class="col-sm-10">
           <div class="row row-cols-6">
-            <div class="form-check me-2">
+            <div class="form-check ms-2 ms-sm-0 me-4 me-sm-2">
               <input
-                class="form-check-input"
+                class="form-check-input "
                 type="radio"
                 name="headerType"
                 id="defaultheaderRadio"
@@ -358,7 +201,7 @@
                 value="customheader"
               />
               <label class="form-check-label" for="parameterRadio">
-                Custom 
+                Custom
               </label>
             </div>
           </div>
@@ -368,7 +211,7 @@
       <div class="mb-3 row" id="headerBox">
         <label for="headertext" class="col-sm-2 col-form-label">Header</label>
         <div class="col-sm-10">
-          <div class="input-group" >
+          <div class="input-group">
             <input
               type="text"
               class="form-control"
@@ -392,10 +235,9 @@
               +
             </button>
           </div>
-          <div  id="header"></div>
+          <div id="header"></div>
         </div>
       </div>
-
 
       <!-- CONTENT PARAMETERS -->
       <div class="mb-3 row">
@@ -404,7 +246,7 @@
         >
         <div class="col-sm-10">
           <div class="row row-cols-6">
-            <div class="form-check me-2">
+            <div class="form-check ms-2 ms-sm-0 me-4 me-sm-2">
               <input
                 class="form-check-input"
                 type="radio"
@@ -463,7 +305,7 @@
           </div>
         </div>
         <div class="col-sm-10" id="parameter"></div>
-        </div>
+      </div>
 
       <!-- Json Box -->
       <div class="row" id="requestJsonBox">
@@ -516,20 +358,17 @@
     </div>
 
     <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
-
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-  </section>
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgb(248, 249, 250);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="/index.html">PostEaser.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-   
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      ></section>
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgb(248, 249, 250)">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="/index.html">PostEaser.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <!-- js -->
     <script
