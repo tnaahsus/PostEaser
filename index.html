@@ -1,383 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <style>
-      #responsePre {
-        max-height: 700px;
-      }
-    </style>
-    <link rel="stylesheet" href="css/prism.css" />
-    <title>PostEaser-Online API Testing Tool</title>
-  </head>
-  <body>
-    <!-- NAVIGATION BAR -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light nav nav-tabs py-2"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand display-1 fs-4" href="/index.html">
-          <!-- <img src="static/sign-post.png" alt="" width="20" height="17" /> -->
-          PostEaser</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 7%;">
-          <div
-            class="navbar-collapse justify-content-md-center collapse show "
-            id="navbarsExample08"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="html/about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="html/contact.html">Contact us</a>
-              </li>
-            </ul>
-          </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    #responsePre {
+      max-height: 700px;
+    }
+  </style>
+  <link rel="stylesheet" href="css/prism.css">
+  <title>PostEaser-Online API Testing Tool</title>
+</head>
+
+<body>
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light nav nav-tabs py-2">
+    <div class="container-fluid">
+      <a class="navbar-brand display-1 fs-4" href="/index.html">
+        <!-- <img src="static/sign-post.png" alt="" width="20" height="17" /> -->
+        PostEaser
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 7%;">
+        <div class="navbar-collapse justify-content-md-center collapse show" id="navbarsExample08">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/contact.html">Contact us</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </nav>
-
-    <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
-      <strong>Hello Users!</strong> If you face any issues or have suggestion please send it <a style="color: #664D44;" href="html/contact.html">here</a> .
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-
-    <!-- MAIN SECTION -->
-    <div class="container">
-      <!-- <h1 class="mt-5 text-center">Welcome to PostEaser!!!</h1> -->
-      <div class="my-5 text-center display-4">
-        Welcome to PostEaser-Online API Testing Tool
-        <hr class="mb-5" />
       </div>
     </div>
-    <div class="container mb-5">
-      <!-- url -->
-      <div class="mb-3 row">
-        <label for="url" class="col-sm-2 col-form-label">URL</label>
-        <div class="col-sm-10 text-center">
-          <input
-            type="text"
-            class="form-control"
-            id="url"
-            placeholder="Enter Url here"
-          />
-        </div>
+  </nav>
+  <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+    <strong>Hello Users!</strong> If you face any issues or have suggestion please send it
+    <a style="color: #664D44;" href="html/contact.html">here</a>
+    .
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <!-- MAIN SECTION -->
+  <div class="container">
+    <!-- <h1 class="mt-5 text-center">Welcome to PostEaser!!!</h1> -->
+    <div class="my-5 text-center display-4">
+      Welcome to PostEaser-Online API Testing Tool
+      <hr class="mb-5">
+    </div>
+  </div>
+  <div class="container mb-5">
+    <!-- url -->
+    <div class="mb-3 row">
+      <label for="url" class="col-sm-2 col-form-label">URL</label>
+      <div class="col-sm-10 text-center">
+        <input type="text" class="form-control" id="url" placeholder="Enter Url here">
       </div>
-
-      <!-- REQUEST TYPE -->
-      <div class="mb-3 row">
-        <label for="requestType" class="col-sm-2 col-form-label"
-          >REQUEST TYPE</label
-        >
-        <div class="col-sm-10">
-          <div class="row row-cols-6">
-            <!-- GET  -->
-            <div class="form-check me-2 ms-2 ms-sm-0">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="requestType"
-                value="GET"
-                id="get"
-                checked
-              />
-              <label class="form-check-label" for="get"> GET </label>
-            </div>
-            <!-- POST  -->
-            <div class="form-check me-3">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="requestType"
-                id="post"
-                value="POST"
-              />
-              <label class="form-check-label" for="post"> POST </label>
-            </div>
-            <!-- PUT  -->
-            <div class="form-check me-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="requestType"
-                id="put"
-                value="PUT"
-              />
-              <label class="form-check-label" for="put"> PUT </label>
-            </div>
-            <!-- PATCH  -->
-            <div class="form-check me-3">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="requestType"
-                id="patch"
-                value="PATCH"
-              />
-              <label class="form-check-label" for="patch"> PATCH </label>
-            </div>
-            <!-- DELETE  -->
-            <div class="form-check me-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="requestType"
-                id="delete"
-                value="DELETE"
-              />
-              <label class="form-check-label" for="delete"> DELETE </label>
-            </div>
+    </div>
+    <!-- REQUEST TYPE -->
+    <div class="mb-3 row">
+      <label for="requestType" class="col-sm-2 col-form-label">REQUEST TYPE
+      </label>
+      <div class="col-sm-10">
+        <div class="row row-cols-6">
+          <!-- GET  -->
+          <div class="form-check me-2 ms-2 ms-sm-0">
+            <input class="form-check-input" type="radio" name="requestType" value="GET" id="get" checked>
+            <label class="form-check-label" for="get"> GET</label>
+          </div>
+          <!-- POST  -->
+          <div class="form-check me-3">
+            <input class="form-check-input" type="radio" name="requestType" id="post" value="POST">
+            <label class="form-check-label" for="post"> POST</label>
+          </div>
+          <!-- PUT  -->
+          <div class="form-check me-2">
+            <input class="form-check-input" type="radio" name="requestType" id="put" value="PUT">
+            <label class="form-check-label" for="put"> PUT</label>
+          </div>
+          <!-- PATCH  -->
+          <div class="form-check me-3">
+            <input class="form-check-input" type="radio" name="requestType" id="patch" value="PATCH">
+            <label class="form-check-label" for="patch"> PATCH</label>
+          </div>
+          <!-- DELETE  -->
+          <div class="form-check me-2">
+            <input class="form-check-input" type="radio" name="requestType" id="delete" value="DELETE">
+            <label class="form-check-label" for="delete"> DELETE</label>
           </div>
         </div>
       </div>
-
-      <!-- token -->
-      <div class="mb-3 row" id="tokenBox">
-        <label for="token" class="col-sm-2 col-form-label">Bearer Token</label>
-        <div class="col-sm-10 text-center">
-          <input
-            type="text"
-            class="form-control"
-            id="token"
-            placeholder="Enter Token here"
-          />
-        </div>
+    </div>
+    <!-- token -->
+    <div class="mb-3 row" id="tokenBox">
+      <label for="token" class="col-sm-2 col-form-label">Bearer Token</label>
+      <div class="col-sm-10 text-center">
+        <input type="text" class="form-control" id="token" placeholder="Enter Token here">
       </div>
-
-      <!-- headertype -->
-      <div class="mb-3 row">
-        <label for="headerType" class="col-sm-2 col-form-label"
-          >Header Type
-        </label>
-        <div class="col-sm-10">
-          <div class="row row-cols-6">
-            <div class="form-check ms-2 ms-sm-0 me-4 me-sm-2">
-              <input
-                class="form-check-input "
-                type="radio"
-                name="headerType"
-                id="defaultheaderRadio"
-                value="defaultheader"
-                checked
-              />
-              <label class="form-check-label" for="jsonRadio"> Default </label>
-            </div>
-            <div class="form-check me-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="headerType"
-                id="customheaderRadio"
-                value="customheader"
-              />
-              <label class="form-check-label" for="parameterRadio">
-                Custom
-              </label>
-            </div>
+    </div>
+    <!-- headertype -->
+    <div class="mb-3 row">
+      <label for="headerType" class="col-sm-2 col-form-label">
+        Header Type
+      </label>
+      <div class="col-sm-10">
+        <div class="row row-cols-6">
+          <div class="form-check ms-2 ms-sm-0 me-4 me-sm-2">
+            <input class="form-check-input " type="radio" name="headerType" id="defaultheaderRadio"
+              value="defaultheader" checked>
+            <label class="form-check-label" for="jsonRadio"> Default</label>
+          </div>
+          <div class="form-check me-2">
+            <input class="form-check-input" type="radio" name="headerType" id="customheaderRadio" value="customheader">
+            <label class="form-check-label" for="parameterRadio">
+              Custom
+            </label>
           </div>
         </div>
       </div>
-      <!-- header -->
-      <div class="mb-3 row" id="headerBox">
-        <label for="headertext" class="col-sm-2 col-form-label">Header</label>
-        <div class="col-sm-10">
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              id="headerKey1"
-              placeholder="Content-Type"
-            />
-            <input
-              type="text"
-              class="form-control ms-2"
-              id="headerValue1"
-              placeholder="application/json"
-            />
-            <button
-              type="button"
-              class="btn btn-outline-secondary ms-2"
-              id="addHeaders"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Add New Header"
-            >
-              +
-            </button>
-          </div>
-          <div id="header"></div>
+    </div>
+    <!-- header -->
+    <div class="mb-3 row" id="headerBox">
+      <label for="headertext" class="col-sm-2 col-form-label">Header</label>
+      <div class="col-sm-10">
+        <div class="input-group">
+          <input type="text" class="form-control" id="headerKey1" placeholder="Content-Type">
+          <input type="text" class="form-control ms-2" id="headerValue1" placeholder="application/json">
+          <button type="button" class="btn btn-outline-secondary ms-2" id="addHeaders" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="Add New Header">
+            +
+          </button>
         </div>
+        <div id="header"></div>
       </div>
-
-      <!-- CONTENT PARAMETERS -->
-      <div class="mb-3 row">
-        <label for="contentType" class="col-sm-2 col-form-label"
-          >CONTENT TYPE</label
-        >
-        <div class="col-sm-10">
-          <div class="row row-cols-6">
-            <div class="form-check ms-2 ms-sm-0 me-4 me-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="contentType"
-                id="jsonRadio"
-                value="json"
-              />
-              <label class="form-check-label" for="jsonRadio"> JSON </label>
-            </div>
-            <div class="form-check me-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="contentType"
-                id="parameterRadio"
-                value="parameter"
-              />
-              <label class="form-check-label" for="parameterRadio">
-                Custom
-              </label>
-            </div>
+    </div>
+    <!-- CONTENT PARAMETERS -->
+    <div class="mb-3 row">
+      <label for="contentType" class="col-sm-2 col-form-label">CONTENT TYPE
+      </label>
+      <div class="col-sm-10">
+        <div class="row row-cols-6">
+          <div class="form-check ms-2 ms-sm-0 me-4 me-sm-2">
+            <input class="form-check-input" type="radio" name="contentType" id="jsonRadio" value="json">
+            <label class="form-check-label" for="jsonRadio"> JSON</label>
+          </div>
+          <div class="form-check me-2">
+            <input class="form-check-input" type="radio" name="contentType" id="parameterRadio" value="parameter">
+            <label class="form-check-label" for="parameterRadio">
+              Custom
+            </label>
           </div>
         </div>
       </div>
-
-      <!-- PARAMETER BOX -->
-      <div class="mb-3 row" id="parametersBox">
-        <label for="parameterBox" class="col-sm-2 col-form-label"
-          >PARAMETERS</label
-        >
-        <div class="col-sm-10">
-          <div class="input-group">
-            <span class="input-group-text">Parameter 1</span>
-            <input
-              type="text"
-              class="form-control"
-              id="parameterKey1"
-              placeholder="Enter Key"
-            />
-            <input
-              type="text"
-              class="form-control"
-              id="parameterValue1"
-              placeholder="Enter Value"
-            />
-            <button
-              type="button"
-              class="btn btn-outline-secondary ms-2"
-              id="addParameters"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Add New Parameter"
-            >
-              +
-            </button>
-          </div>
-        </div>
-        <div class="col-sm-10" id="parameter"></div>
-      </div>
-
-      <!-- Json Box -->
-      <div class="row" id="requestJsonBox">
-        <label for="requestJson" class="col-sm-2 col-form-label"
-          >REQUEST JSON</label
-        >
-        <div class="col-sm-10">
-          <div class="form-floating">
-            <textarea
-              class="form-control"
-              id="requestJson"
-              style="height: 100px"
-            ></textarea>
-          </div>
-        </div>
-      </div>
-
-      <!-- SUBMIT BUTTON -->
-      <div class="mb-5 row">
-        <div class="col-sm-10 mt-5">
-          <button
-            type="button"
-            id="submit"
-            class="btn btn-dark ps-5 pe-5 pt-2 pb-2"
-          >
-            Submit
+    </div>
+    <!-- PARAMETER BOX -->
+    <div class="mb-3 row" id="parametersBox">
+      <label for="parameterBox" class="col-sm-2 col-form-label">PARAMETERS
+      </label>
+      <div class="col-sm-10">
+        <div class="input-group">
+          <span class="input-group-text">Parameter 1</span>
+          <input type="text" class="form-control" id="parameterKey1" placeholder="Enter Key">
+          <input type="text" class="form-control" id="parameterValue1" placeholder="Enter Value">
+          <button type="button" class="btn btn-outline-secondary ms-2" id="addParameters" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="Add New Parameter">
+            +
           </button>
         </div>
       </div>
-      <hr />
-      <!-- RESPONSE BOX -->
-      <div class="mb-5 row" id="responseJsonBox">
-        <label for="responseJson" class="col-sm-2 col-form-label"
-          >REQUEST JSON</label
-        >
-        <div class="col-sm-10">
-          <div class="form-floating">
-            <!-- <textarea
+      <div class="col-sm-10" id="parameter"></div>
+    </div>
+    <!-- Json Box -->
+    <div class="row" id="requestJsonBox">
+      <label for="requestJson" class="col-sm-2 col-form-label">REQUEST JSON
+      </label>
+      <div class="col-sm-10">
+        <div class="form-floating">
+          <textarea class="form-control" id="requestJson" style="height: 100px"></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- SUBMIT BUTTON -->
+    <div class="mb-5 row">
+      <div class="col-sm-10 mt-5">
+        <button type="button" id="submit" class="btn btn-dark ps-5 pe-5 pt-2 pb-2">
+          Submit
+        </button>
+      </div>
+    </div>
+    <hr>
+    <!-- RESPONSE BOX -->
+    <div class="mb-5 row" id="responseJsonBox">
+      <label for="responseJson" class="col-sm-2 col-form-label">REQUEST JSON
+      </label>
+      <div class="col-sm-10">
+        <div class="form-floating">
+          <!-- <textarea
               class="form-control"
               id="responseJson"
               style="height: 100px"
             ></textarea> -->
-
-            <pre id="responsePre" class="language-javascript">
-              <code id='responsePrism' class="language-javascript "></code>
-            </pre>
-          </div>
+          <pre id="responsePre" class="language-javascript">
+                            <code id="responsePrism" class="language-javascript "></code>
+                        </pre>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgb(248, 249, 250)">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="/index.html">PostEaser.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="js/prism.js"></script>
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
 
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-      <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      ></section>
-      <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgb(248, 249, 250)">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="/index.html">PostEaser.com</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-
-    <!-- js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/index.js"></script>
-    <script src="js/prism.js"></script>
-  </body>
-  <!-- Option 1: Bootstrap Bundle with Popper -->
 </html>
